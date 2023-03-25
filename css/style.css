@@ -1,15 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #4a69bd;
     color: #fff;
     text-align: center;
     padding: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -36,44 +39,49 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #4a69bd;
     color: #fff;
     text-align: center;
     padding: 1rem;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Style the projects section */
 #projects {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
 }
 
 .project {
-background-color: #f4f4f4;
-border: 1px solid #ddd;
-padding: 1rem;
-text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .project-title {
-font-size: 1.5rem;
-margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .project img {
-max-width: 100%;
+    max-width: 100%;
 }
 
-/* Responsive navigation menu */
 @media (max-width: 600px) {
-nav ul li {
-display: block;
-margin: 0;
-}
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
 
-nav ul {
-    text-align: center;
-    padding: 0;
-}
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
 }
