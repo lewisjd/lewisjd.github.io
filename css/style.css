@@ -61,6 +61,15 @@ footer {
     transition: box-shadow 0.3s;
 }
 
+.project b {
+    color: blue;
+    text-decoration: underline;
+  }
+
+.project c {
+    text-decoration: underline;
+}
+
 .project:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
