@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navItems.forEach(function (navItem) {
       navItem.addEventListener('click', function (event) {
         var href = this.getAttribute('href');
-        if (href === 'projects.html' || href === 'home.html') {
+        if (href === 'projects.html' || href === 'index.html') {
           return; // do nothing and allow the link to be followed
         }
         event.preventDefault();
